@@ -269,6 +269,57 @@ bool guardarModificacionEnt(Entrenamiento reg, int pos){
     return guardo;
 }
 
+void listarPorIdEnt(){
+    system("cls");
+    int codigo, pos;
+    cout << "Ingresar ID a buscar: ";
+    cin >> codigo;
+    pos = buscarEnt(codigo);
+    if(pos >= 0){
+        Entrenamiento reg;
+        reg = leerEntren(pos);
+        mostrarEnt(reg); //alternativa tambien funciona: mostrarDatos(leerUser(pos));
+    } else {
+        cout << "\nCodigo inexistente" << endl;
+    }
+    cout << endl << endl;
+    system("pause");
+}
 
 
 
+/*int buscarEntID(int id){
+    int cont=0, total;
+    Entrenamiento reg;
+    FILE *f = fopen(FILEENTRENAMIENTO, "rb");
+    if(f == NULL){
+        cout << "No se puede leer el archivo.dat .";
+        return -1;
+    }
+    total=(cantidadEntren();
+    while(fread(&reg, sizeof(Entrenamiento), 1, f) && total == 0){
+
+        if(id == reg.idUsuario){
+            cont++;
+        }
+        total--;
+    }
+    fclose(f);
+    return cont;
+}*/
+
+/// LEE el archivo.dat todos los entrenamientos
+/*void listarPorIdUsuario(id){
+    system("cls");
+    int cant = cantidadEntren();
+    for(int i=0; i<cant; i++){
+        Entrenamiento reg = leerEntren(i);
+        if(reg.idUsuario == id){
+        mostrarEnt(reg);
+        }
+        //if(reg.estado){}
+    }
+    cout << endl << endl;
+    system("pause");
+}
+*/
