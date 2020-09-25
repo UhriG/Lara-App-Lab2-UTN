@@ -183,7 +183,6 @@ void listarEnTodos(){
     for(int i=0; i<cant; i++){
         Entrenamiento reg = leerEntren(i);
         mostrarEnt(reg);
-        //if(reg.estado){}
     }
     cout << endl << endl;
     system("pause");
@@ -278,7 +277,7 @@ void listarPorIdEnt(){
     if(pos >= 0){
         Entrenamiento reg;
         reg = leerEntren(pos);
-        mostrarEnt(reg); //alternativa tambien funciona: mostrarDatos(leerUser(pos));
+        mostrarEnt(reg);
     } else {
         cout << "\nCodigo inexistente" << endl;
     }
@@ -286,40 +285,49 @@ void listarPorIdEnt(){
     system("pause");
 }
 
+/// Funciones parcial punto 1
 
-
-/*int buscarEntID(int id){
-    int cont=0, total;
-    Entrenamiento reg;
-    FILE *f = fopen(FILEENTRENAMIENTO, "rb");
-    if(f == NULL){
-        cout << "No se puede leer el archivo.dat .";
-        return -1;
-    }
-    total=(cantidadEntren();
-    while(fread(&reg, sizeof(Entrenamiento), 1, f) && total == 0){
-
-        if(id == reg.idUsuario){
-            cont++;
-        }
-        total--;
-    }
-    fclose(f);
-    return cont;
-}*/
-
-/// LEE el archivo.dat todos los entrenamientos
-/*void listarPorIdUsuario(id){
+void listarEnAnio(){
     system("cls");
+    int anio;
+    cout << "Ingrese el año a mostrar: ";
+    cin >> anio;
+    while(anio>2020){
+        cout << "Ingrese el año a mostrar: ";
+        cin >> anio;
+    }
     int cant = cantidadEntren();
     for(int i=0; i<cant; i++){
         Entrenamiento reg = leerEntren(i);
-        if(reg.idUsuario == id){
-        mostrarEnt(reg);
-        }
-        //if(reg.estado){}
+        mostrarEntAnio(reg,anio);
     }
     cout << endl << endl;
     system("pause");
 }
-*/
+
+void mostrarEntAnio(Entrenamiento reg, int anio){
+    char conf;
+    if(anio == reg.diEntrenamiento.anio){
+        cout << endl << endl;
+        cout << "----------" << endl;
+        cout << "ID: " << reg.id << endl;
+        cout << "ID Usuario: " << reg.idUsuario << endl;
+        cout << "Fecha de Entrenamiento: " << reg.diEntrenamiento.dia << " / " << reg.diEntrenamiento.mes << " / " << reg.diEntrenamiento.anio << endl;
+
+        switch(reg.actividad){
+            case 1: cout << "Actividad: Caminata" << endl;
+            break;
+            case 2: cout << "Actividad: Correr" << endl;
+            break;
+            case 3: cout << "Actividad: Bicicleta" << endl;
+            break;
+            case 4: cout << "Actividad: Natacion" << endl;
+            break;
+            case 5: cout << "Actividad: Pesas" << endl;
+            break;
+        }
+        cout << "Calorias: " << reg.calorias << endl;
+        cout << "Tiempo: " << reg.tiempo << " Min" << endl;
+    }
+}
+

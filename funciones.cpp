@@ -44,7 +44,7 @@ void menuPrincipal(){
                 menuEntrenamientos();
             break;
             case 3:
-                //menuReportes();
+                menuReportes();
             break;
             case 4:
                 menuConfiguracion();
@@ -160,6 +160,35 @@ void menuConfiguracion(){
         }
     }
 }
+
+///Menu reportes
+void menuReportes(){
+    bool menu = true;
+    while(menu){
+        system("cls");
+        cout << "MENU REPORTES" << endl;
+        cout << "--------------" << endl;
+        cout << "1) PUNTO 1 - RESUELTO" << endl;
+        cout << "2) PUNTO 2 - SIN RESOLVER" << endl;
+        cout << "--------------" << endl;
+        cout << "0) VOLVER AL MENU PRINCIPAL" << endl << endl;
+
+        int opcion;
+        cin >> opcion;
+
+        switch(opcion){
+            case 1:
+               listarEnAnio();
+            break;
+            case 2:
+            break;
+            case 0:
+                menu = false;
+            break;
+        }
+    }
+}
+
 ///Funciones de verificacion de datos
 
 ///Funcion para validar nombre

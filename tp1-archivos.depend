@@ -231,3 +231,66 @@
 	"entrenamiento.h"
 	"ui.h"
 
+1600992387 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\main.cpp
+	<iostream>
+	<locale.h>
+	<windows.h>
+	"funciones.h"
+	"strUsuario.h"
+
+1600993028 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\funciones.h
+
+1600986920 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\strusuario.h
+
+1600986920 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\ui.cpp
+	<iostream>
+	<cstring>
+	"ui.h"
+	"rlutil.h"
+
+1600986920 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\ui.h
+
+1600986920 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\rlutil.h
+	<iostream>
+	<string>
+	<cstdio>
+	<stdio.h>
+	<string.h>
+	<windows.h>
+	<conio.h>
+	<termios.h>
+	<unistd.h>
+	<sys/ioctl.h>
+	<sys/types.h>
+	<sys/time.h>
+
+1600993566 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\entrenamiento.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"entrenamiento.h"
+	"strUsuario.h"
+
+1600993422 e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\entrenamiento.h
+
+1600991221 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\funcusuarios.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	<cstdio>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+
+1600993350 source:e:\utn frgp\2° cuatrimestre\laboratorio ii\lara-app\lara-app-lab2-utn\funciones.cpp
+	<iostream>
+	<windows.h>
+	<string.h>
+	<cstdio>
+	<ctime>
+	"funciones.h"
+	"strUsuario.h"
+	"entrenamiento.h"
+	"ui.h"
+

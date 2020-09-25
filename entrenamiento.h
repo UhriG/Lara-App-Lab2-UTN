@@ -32,5 +32,9 @@ void modificarEnt(); // Modifica entrenamiento
 bool guardarModificacionEnt(Entrenamiento, int);
 void listarPorIdEnt(); // Lista por ID
 void listarPorIdUsuario();
-//void listarPorIdUsuario(reg);
+
+/// Puntos parcial
+void listarEnAnio();
+void mostrarEntAnio(Entrenamiento, int);
+
 #endif // ENTRENAMIENTO_H_INCLUDED
